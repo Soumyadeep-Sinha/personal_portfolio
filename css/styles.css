@@ -1,0 +1,156 @@
+*{
+    margin: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background: linear-gradient(90deg, navy, purple);
+    color: white;
+}
+
+#navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: rgb(24, 23, 23, 0.8);
+    padding: 20px;
+    z-index: 100;
+}
+
+.name{
+    flex: 0.6;
+    font-size: 25px;
+    font-family: cursive;
+}
+
+.links{
+    flex: 0.4;
+    font-size: 25px;
+    font-family: cursive;
+}
+
+.links a{
+    text-decoration: none;
+    color: white;
+    padding: 3%;
+}
+
+.links a:hover{
+    background-color: rgb(65, 65, 65, 0.5);
+}
+
+@media (max-width: 1000px){
+    .name{
+        flex: 0.4;
+        font-size: 20px;
+    }
+    .links{
+        flex: 0.6;
+        font-size: 20px;
+        padding: 2%;
+    }
+}
+
+.main-box{
+    text-align: center;
+}
+
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+    min-height: 100vh
+}
+
+.project-image{
+    object-fit: contain;
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+}
+
+#welcome-section{
+    background: linear-gradient(90deg, rgb(76, 76, 83, 0.6), rgb(49, 28, 49, 0.6));
+}
+
+#projects{
+    background: linear-gradient(90deg, rgba(88, 224, 122, 0.6), rgba(182, 69, 88, 0.6));
+}
+#contact{
+    background-color: rgb(29, 29, 65);
+}
+
+h1{
+    font-size: 50px;
+    margin-bottom: 70px;
+    font-family: cursive;
+}
+
+h2{
+    font-size: 30px;
+    margin-bottom: 50px;
+    font-family: cursive;
+}
+
+.myinfo{
+    font-size: 20px;
+    margin-bottom: 50px;
+    font-family: cursive;
+}
+
+.project-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    grid-gap: 40px;
+}
+
+@media (max-width: 1000px){
+    .project-container{
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+}
+
+.myProjects{
+    background-color: navy;
+    border-radius: 20px;
+    transition: transform 0.5s ease-in-out;
+}
+
+.myProjects:hover{
+    transform: scale(1.03);
+    transition: transform 0.5s ease-in-out;
+}
+
+.project-tile{
+    font-size: 25px;
+    padding: 5px;
+}
+
+.contact-me{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 50px 0;
+}
+
+.contact-type{
+    margin: 20px;
+}
+
+.contact-type a{
+    text-decoration: none;
+    color: white;
+}
+
+.contact-type a:hover{
+    color: skyblue;
+}
